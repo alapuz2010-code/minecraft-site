@@ -1,0 +1,151 @@
+@font-face {
+  font-family: "MinecraftSeven";
+  src: url("fonts/Minecraft\ Seven_2.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.pixel-text {
+   font-family:"MinecraftSeven", sans-serif;
+}
+.header {
+  background-color: #262423;
+  padding: 15px 0;
+  color: #fefefe;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.st0 {
+}
+.st1 {
+}
+.header__menu {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  font-weight: 600;
+  align-items: center;
+}
+.header__logo {
+  display: flex;
+  flex-shrink: 0;
+}
+.header__logo svg {
+  flex-shrink: 0;
+  width: 222px;
+}
+.container {
+  max-width: 1350px;
+  margin: 0 auto;
+}
+.buy-now {
+  color: rgba(134, 212, 98, 1);
+  border: 2px solid currentColor;
+  padding: 5px 10px;
+}
+.buy-now:hover {
+  background-color: #343e40;
+}
+.header__item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.header__item:hover {
+  color: rgba(134, 212, 98, 1);
+}
+.collapsible-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+
+  background-color: #171615;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+.collapsible-panel-content {
+  min-height: 0;
+  overflow: hidden;
+  width: max-content;
+  margin: 0 auto;
+}
+.collapsible-panel.open {
+  grid-template-rows: 1fr;
+}
+.search-input-wrap {
+align-items: center;
+display: flex;
+background-color: black;
+border: 1px solid #6B6562;
+padding: 10px 30px;
+gap: 20px;
+}
+.search-input-wrap:has(.search-input:focus) {
+  border-color: #86D562;
+}
+.search-input {
+color: white;
+border: none;
+    background-color: transparent;
+    height: 50px;
+    width: 590px;
+    font-size: 15px;
+} 
+.search-input:focus {
+  outline: none;
+}
+.cards-list {
+  gap: 30px;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(4, 232px);
+
+}
+.offer-card {
+}
+.offer-card__image {
+  display: block ;
+  width: 100%;
+}
+
+.offer-card__title {
+  font-size: 14px;
+}
+.search-block {
+  width: 700px;
+  margin: 0 auto;
+}
+.search-block__title {
+  color: #ABA09C;
+  font-size: 14px;
+  font-weight: 400;
+}
+.cards-block__title {
+  color:#ABA09C ;
+  font-size: 13px;
+  font-weight: 400;
+}
+.search-content {
+  gap: 40px;
+  display: grid;
+  padding: 40px 0;
+}
